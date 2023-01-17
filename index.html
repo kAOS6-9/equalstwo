@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+  <link rel="stylesheet" href="./global.css" />
+  <link rel="stylesheet" href="./index.css" />
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" />
+</head>
+
+<body>
+  <div class="image-2-parent">
+    <img class="image-2-icon" alt="Logo" loading="eager" src="public/equals2.svg" data-animate-on-scroll />
+    <section class="frame-child" id="header"></section>
+    <h1 class="pediatric-skin-assessment-container" data-animate-on-scroll>
+      <p class="pediatric-skin">Pediatric Skin Assessment</p>
+    </h1>
+    <div class="during-the-first-container">
+      <p class="assessment-intro">
+        During the first examination of the new-born, it is essential to do<br>
+        a head to foot examination of the skin.
+      </p>
+    </div>
+    <div class="frame-item"></div>
+    <div class="rectangle-parent">
+      <div class="group-child"></div>
+      <div class="group-item"></div>
+      <img class="group-inner" alt="" src="public/rectangle-28.svg" />
+      <div class="rectangle-div"></div>
+      <div class="group-child1"></div>
+      <div class="group-child2"></div>
+      <div class="parameters-to-be">Parameters to be observed are:</div>
+      <div class="dryness">Dryness</div>
+      <div class="scaling">Scaling</div>
+      <div class="erythema">Erythema</div>
+      <div class="colour">Colour</div>
+      <div class="texture">Texture</div>
+      <div class="physiological-changes">Physiological Changes</div>
+    </div>
+    <div class="why-should-you">Why should you take the test :</div>
+    <div class="frame-inner"></div>
+    <img class="image-4-icon" alt="" src="public/image-4@2x.png" />
+    <div class="start">
+      <button class="button" style="vertical-align:middle"
+        onclick="window.location.href='1index.html'"><span>Start</span></button>
+    </div>
+    <img class="openmojihamburger-menu-icon" alt="" src="public/openmojihamburgermenu.svg" />
+    <div class="rectangle-group">
+      <div class="group-child3"></div>
+      <input class="rectangle-input" type="text" required />
+      <input class="group-child4" type="date" required />
+      <div class="group-child5"></div>
+      <input class="group-child6" type="email" required />
+      <input class="group-child7" type="tel" defaultvalue="phnumber" min="10" max="10" maxlength="10" minlength="10"
+        required />
+      <div class="group-child8"></div>
+      <div class="group-child9"></div>
+      <img class="rectangle-icon" alt="" src="public/rectangle-14.svg" />
+      <div class="group-child10"></div>
+      <div class="group-child11"></div>
+      <div class="name">Name</div>
+      <div class="date-of-birth">Date of Birth</div>
+      <label class="gender">Gender</label>
+      <div class="email-id">Email ID</div>
+      <div class="mobile-no">Mobile No</div>
+      <div class="group-wrapper">
+        <div class="consent-declaration-parent">
+          <p class="consent-declaration">Consent Declaration</p>
+          <input class="group-child12" type="checkbox" required />
+        </div>
+      </div>
+      <select class="frame" required>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+      </select>
+    </div>
+  </div>
+
+  <script>
+    var rectangleButton = document.getElementById("rectangleButton");
+    if (rectangleButton) {
+      rectangleButton.addEventListener("click", function (e) {
+        // Please sync "Android Large - 5" to the project
+      });
+    }
+    var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
+    var observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting || entry.intersectionRatio > 0) {
+            const targetElement = entry.target;
+            targetElement.classList.add("animate");
+            observer.unobserve(targetElement);
+          }
+        }
+      },
+      {
+        threshold: 0.15,
+      }
+    );
+
+    for (let i = 0; i < scrollAnimElements.length; i++) {
+      observer.observe(scrollAnimElements[i]);
+    }
+  </script>
+</body>
+
+</html>

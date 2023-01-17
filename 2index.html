@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./1global.css" />
+    <link rel="stylesheet" href="./1index.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  <body class="p-3 m-0 border-0 bd-example bd-example-row">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="public/image-2.svg" alt="Bootstrap" ></a>
+        <div class="d-flex">
+          <img src="public/openmojihamburgermenu.svg">
+        </div>
+      </div>
+    </nav>
+    <div class="container text-center">
+      <div class="row">
+        <div class="container text-center">
+          <img class="img1"src="public/1232.svg"/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-2">
+        </div>
+        <div class="col-sm-8">
+          <div class="row">
+            <div class="pad">
+              <h1 class="boold">Erythema</h1>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-2">
+          
+        </div>
+      </div>
+    </div>
+    
+    <div class="padi">
+      <div class="container">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in.
+      </div>
+    </div>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-6 offset-md-3"><button class="android-large-5-item" id="rectangleButton" value="1"><span class="normal-no-sign-container"><b class="buld">No Evidence of erythema</b></span></button></div>
+      </div>
+      <div class="row gap">
+      </div>
+      <div class="row">
+        <div class="col-md-6 offset-md-3 "><button class="android-large-5-item" id="rectangleButton1" value="2"><span class="normal-no-sign-container"><b class="buld">Visible erythema</b>, < 50% body surface</span></button></div>
+      </div>
+      <div class="row gap">
+      </div>
+      <div class="row">
+        <div class="col-md-6 offset-md-3 "><button class="android-large-5-item" id="rectangleButton2" value="3"><span class="normal-no-sign-container"><b class="buld">Visible erythema</b>, > 50% body surface</span></button></div>
+      </div>
+      <div class="row gap">
+      </div>
+      <!-- <div class="row justify-content-evenly">
+        <div class="col-4">
+            <a href="1index.html">
+                <img src="public/prev.svg"/>
+            </a>
+        </div>
+        <div class="col-4">
+            <a href="3index.html">
+                <img src="public/next.svg"/>
+              </a>
+        </div>
+      </div> -->
+      <div class="row gap">
+      </div>
+      <div class="row">
+        <div class="col-md-6 offset-md-3 ">
+          <p class="example">Example:</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var rectangleButton = document.getElementById("rectangleButton");
+      var local = parseInt(localStorage.getItem("value"));
+      if (rectangleButton) {
+        rectangleButton.addEventListener("click", function (e) {
+          var q1 = parseInt(document.getElementById("rectangleButton").value);
+          var score = parseInt(localStorage.getItem("value")) + q1;
+          localStorage.setItem("value1", score);
+          console.log(localStorage.getItem("value1"));
+          location.href = "3index.html";
+        });
+      }
+      
+      var rectangleButton1 = document.getElementById("rectangleButton1");
+      if (rectangleButton1) {
+        rectangleButton1.addEventListener("click", function (e) {
+          var q1 = parseInt(document.getElementById("rectangleButton1").value);
+          var score = parseInt(localStorage.getItem("value")) + q1;
+          localStorage.setItem("value1", score);
+          console.log(localStorage.getItem("value1"));
+          location.href = "3index.html";
+        });
+      }
+      
+      var rectangleButton2 = document.getElementById("rectangleButton2");
+      if (rectangleButton2) {
+        rectangleButton2.addEventListener("click", function (e) {
+          var q1 = parseInt(document.getElementById("rectangleButton2").value);
+          var score = parseInt(localStorage.getItem("value")) + q1;
+          localStorage.setItem("value1", score);
+          console.log(localStorage.getItem("value1"));
+          location.href = "3index.html";
+        });
+      }
+      </script>
+  </body>
+</html>

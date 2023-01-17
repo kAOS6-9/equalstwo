@@ -1,0 +1,303 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+.openmojihamburger-menu-icon {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  width: 46px;
+  height: 46px;
+  overflow: hidden;
+}
+.android-large-5-child {
+  position: relative;
+  top: 145px;
+  display: flex;
+  margin: auto;
+  border-radius: var(--br-md);
+  background-color: var(--color-beige);
+  width: 350px;
+  height: 41px;
+}
+.android-large-5-inner
+{
+  cursor: pointer;
+  border: 1px solid var(--color-gray-100);
+  padding: 0;
+  background-color: var(--color-white);
+  position: relative;
+  top: 215px;
+  display: flex;
+  margin: auto;
+  /* left: 9px; */
+  border-radius: var(--br-md);
+  box-sizing: border-box;
+  width: 342px;
+  height: 41px;
+}
+.android-large-5-item
+{
+  cursor: pointer;
+  border: 1px solid var(--color-gray-100);
+  padding: 0;
+  background-color: var(--color-white);
+  position: relative;
+  /* left: 9px; */
+  border-radius: var(--br-md);
+  box-sizing: border-box;
+  width: 342px;
+  height: 41px;
+}
+.rectangle-button {
+  cursor: pointer;
+  border: 1px solid var(--color-gray-100);
+  padding: 0;
+  background-color: var(--color-white);
+  position: relative;
+  top: 230px;
+  display: flex;
+  margin: auto;
+  /* left: 9px; */
+  border-radius: var(--br-md);
+  box-sizing: border-box;
+  width: 342px;
+  height: 41px;
+}
+.android-large-5-item:hover {
+  background-color: var(--color-gray-400);
+}
+.android-large-5-item:active {
+  background-color: var(--color-gray-100);
+}
+.android-large-5-inner:hover {
+  background-color: var(--color-gray-400);
+}
+.android-large-5-inner:active {
+  background-color: var(--color-gray-100);
+}
+
+.rectangle-button:hover {
+  background-color: rgba(141, 132, 185, 0.2);
+}
+.rectangle-button:active,
+.rectangle-div {
+  background-color: var(--color-gray-100);
+}
+.rectangle-div {
+  position: absolute;
+  top: 503px;
+  left: 143px;
+  border-radius: var(--br-md);
+  width: 74px;
+  height: 36px;
+}
+.group-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+}
+.div,
+.ellipse-parent {
+  position: absolute;
+  top: 2px;
+  left: 9px;
+}
+.ellipse-parent {
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  color: var(--color-white);
+}
+.div1 {
+  position: absolute;
+  top: 2px;
+  left: 8px;
+}
+.ellipse-container,
+.ellipse-group {
+  position: absolute;
+  top: 0;
+  left: 60px;
+  width: 24px;
+  height: 24px;
+}
+.ellipse-container {
+  left: 120px;
+}
+.group-child1,
+.group-child2 {
+  position: absolute;
+  top: 11px;
+  left: 23px;
+  background-color: var(--color-gray-100);
+  width: 38px;
+  height: 2px;
+}
+.group-child2 {
+  left: 83px;
+}
+.group-parent {
+  position: relative;
+  top: 82px;
+  margin: auto;
+  width: 144px;
+  height: 24px;
+  font-size: var(--font-size-sm);
+}
+.dryness {
+  position: relative;
+  top: 124px;
+  margin: auto;
+  font-size: var(--font-size-lg);
+  line-height: 120%;
+}
+.dryness,
+.normal {
+  font-weight: 500;
+}
+.normal-no-sign-container {
+  position: relative;
+  margin: auto;
+  font-family: 'Poppins';
+  line-height: 120%;
+  color: var(--color-gray-100);
+  font-size: 16px;
+}
+.dry-skin-visible-container,
+
+.very-dry-skin-container {
+  position: absolute;
+  top: 393px;
+  left: 25px;
+  line-height: 120%;
+}
+
+.very-dry-skin-container {
+  top: 448px;
+}
+
+.lorem-ipsum-dolor {
+  position: relative;
+  top: 170px;
+  margin: auto;
+  left: 13px;
+  padding-right: 13px;
+  font-size: var(--font-size-sm);
+  font-weight: 300;
+  color: #3a3a3a;
+  text-align: left;
+  font-family: 'poppins';
+}
+.image-2-icon {
+  position: absolute;
+  top: 13px;
+  left: 10px;
+  width: 78px;
+  height: 40px;
+}
+.material-symbolsarrow-back-ro-icon {
+  position: absolute;
+  top: 509px;
+  left: 168px;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+}
+.rectangle-icon {
+  position: absolute;
+  top: 586px;
+  left: 13px;
+  border-radius: var(--br-md);
+  width: 335px;
+  height: 201px;
+}
+.android-large-5 {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-base);
+  color: var(--color-gray-100);
+  font-family: var(--font-poppins);
+}
+
+.buld
+{
+  font-weight: 500;
+}
+
+.boold
+{
+  font-weight: 500;
+  font-size: 24px;
+  font-family: 'Poppins';
+  padding: 2%;
+  color: #8d84b9;
+  border-radius: var(--br-md);
+  background-color: var(--color-beige);
+}
+
+.a123
+{
+  position: relative;
+  margin: auto;
+  display: flex;
+  top: 120px;
+}
+.lod
+{
+  top: 120px;
+}
+
+.img1
+{
+  margin-top: 5%;
+}
+
+.pad
+{
+  padding-top: 5%;
+}
+
+.padi
+{
+  padding-top: 1%;
+  padding-bottom: 5%;
+  font-family: 'poppins';
+}
+
+.option
+{
+  cursor: pointer;
+  border: 1px solid var(--color-gray-100);
+  padding: 0;
+  background-color: var(--color-white);
+  /* left: 9px; */
+  border-radius: var(--br-md);
+  box-sizing: border-box;
+  width: 342px;
+  height: 41px;
+}
+
+.gap
+{
+  height: 10px;
+}
+
+.example
+{
+  padding-top: 1%;
+  font-weight: 500;
+  font-family: 'poppins';
+}
+
+.nextgap
+{
+  padding-top: 2%;
+}
